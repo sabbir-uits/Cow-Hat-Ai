@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Hind Siliguri", ui-sans-serif, system-ui, sans-serif;
+  --font-bengali: "Hind Siliguri", sans-serif;
+  
+  --color-primary: #1b4332;
+  --color-primary-light: #2d6a4f;
+  --color-accent: #d4a373;
+  --color-earth-bg: #fdfaf5;
+  --color-ink: #1c1c1c;
+}
+
+@layer base {
+  body {
+    @apply bg-earth-bg text-ink font-sans;
+  }
+}
+
+.bengali {
+  font-family: var(--font-bengali);
+}
+
+.glass-card {
+  @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}

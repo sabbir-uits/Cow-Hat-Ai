@@ -1,0 +1,10 @@
+{
+  "name": "Gorur Haat AI (গুরুর হাট এআই)",
+  "description": "AI-powered cattle weight and price estimator for the Bangladesh market. আপলোড করুন গরু বা ছাগলের ছবি এবং জানুন ওজন ও বাজার দরের সঠিক অনুমান।",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "Image Recognition"
+  ]
+}
